@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.iliujing.mypassword.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="551dp">
+
+        <LinearLayout
+            android:id="@+id/checkGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/allowNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="允许数字" />
+
+            <CheckBox
+                android:id="@+id/allowStr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="允许英文字符" />
+
+            <CheckBox
+                android:id="@+id/allowSpecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="允许特殊字符" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/numberSizeGroup"
+            android:layout_below="@id/checkGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/passwordNumText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/text_circle_shape"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:text="8"/>
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_below="@id/checkGroup1"
+                android:layout_marginTop="10dp"
+                android:max="20"
+                android:progress="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/numberSizeGroup"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/input_shape"
+            android:textSize="40sp" />
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/output">
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:background="@drawable/button_shape"
+                android:text="生成"/>
+            <Button
+                android:id="@+id/copyBtn"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="@drawable/button_shape"
+                android:text="复制"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
