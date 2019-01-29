@@ -2,6 +2,7 @@ package com.iliujing.mypassword.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Base64;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -11,6 +12,10 @@ import com.iliujing.mypassword.vo.PasswordItem;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ArrayUtil;
@@ -60,7 +65,6 @@ public class CommonUtils {
         SharedPreferences sp = context.getSharedPreferences(DefaultConstants.DB_NAME, Context.MODE_PRIVATE);
         return sp.getString(DefaultConstants.DB_ITEM_NAME, null);
     }
-
     public static boolean validPwd(Context context,String pwd){
         DefaultConstants.setKey(pwd);
         try {

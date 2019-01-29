@@ -18,6 +18,7 @@ public class DefaultConstants {
 
     public static final String DB_NAME = "db";
     public static final String DB_ITEM_NAME = "item";
+    public static final String DB_KEY = "key";
     public static final Charset DB_CHARSET = Charset.forName("UTF-8");
 
     private static String key;

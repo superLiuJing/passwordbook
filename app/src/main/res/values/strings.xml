@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">密码簿</string>
-
+    <string name="biometric_title">指纹验证</string>
+    <string name="biometric_subtitle">请按验证身份用于加密秘钥</string>
+    <string name="biometric_content">指纹传感器</string>
+    <string name="biometric_button">密码验证</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
