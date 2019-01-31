@@ -60,6 +60,11 @@ public class PasswordAdapter extends BaseAdapter {
         return convertView;
     }
 
+    public void updateList(List<PasswordItem> list){
+        this.list = list;
+        notifyDataSetChanged();
+    }
+
     class ViewHolder{
         TextView name;
         TextView account;

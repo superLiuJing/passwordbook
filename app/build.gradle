@@ -7,8 +7,8 @@ android {
         applicationId "com.iliujing.mypassword"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 10
-        versionName "1.1.0"
+        versionCode 12
+        versionName "1.1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
