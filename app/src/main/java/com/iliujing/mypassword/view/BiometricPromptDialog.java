@@ -10,28 +10,12 @@ import android.view.View;
 import com.iliujing.mypassword.R;
 
 public class BiometricPromptDialog extends Dialog implements View.OnClickListener{
-    private Context mContext;
     private View.OnClickListener listener;
-
-    public BiometricPromptDialog(Context context) {
-        super(context);
-        this.mContext = context;
-    }
 
     public BiometricPromptDialog(Context context,View.OnClickListener listener){
         super(context);
         this.listener = listener;
     }
-
-    public BiometricPromptDialog(Context context, int themeResId) {
-        super(context, themeResId);
-    }
-
-    protected BiometricPromptDialog(Context context, boolean cancelable, DialogInterface.OnCancelListener cancelListener) {
-        super(context, cancelable, cancelListener);
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +25,7 @@ public class BiometricPromptDialog extends Dialog implements View.OnClickListene
     }
 
     private void initView(){
-        findViewById(R.id.cancel_btn).setOnClickListener(listener);
+        findViewById(R.id.cancel_btn).setOnClickListener(this);
     }
 
     @Override
