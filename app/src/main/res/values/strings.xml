@@ -8,4 +8,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="search">请输入关键字</string>
     <string name="action_settings">Settings</string>
+    <string name="str_help_title">使用说明</string>
+    <string name="str_help_desc">\u3000\u3000本项目不记录任何个人密码，只记录密码加密之后的密文，请务必记住加密秘钥，否则更换手机之后，无法还原数据，同时，不需要任何Android系统权限(包括网络权限)，让人放心使用，即使密文被盗，秘钥被盗，安全性也有一定的保障。</string>
+    <string name="str_notice">数据无价，请务必保存好秘钥并确保记住，否则永远无法找回，建议创建一个从来没有使用过且只在该软件中使用的秘钥。本软件不支持修改密码也是为了防止密码多次修改增加记忆负担。更换手机之后，密码不一致会导致还原数据失败，切记切记！！！</string>
+    <string name="str_help_export_title">一、备份</string>
+    <string name="str_help_export_content">\u3000\u3000所有敏感信息的备份，都采用密文的方式存储，不涉及文件处理权限，故需要用户自己将密文以文本的方式保存，建议保存为文本文件之后，将文本文件备份好，以防止丢失。</string>
+    <string name="str_help_import_title">二、还原</string>
+    <string name="str_help_import_content">\u3000\u3000将密文粘贴到指定文本框之后，解析成功会提示添加到当前、取消、替换到当前的选项，请谨慎选择。同时，备份的秘钥必须跟加密的秘钥保持一致，否则解密失败，无法进行解析。</string>
+    <string name="str_help_error_title">三、错误处理</string>
+    <string name="str_help_error_content">\u3000\u3000若出现密码忘记或者密文解析失败等情形，请卸载此软件，重新记录，之前的记录不可找回。</string>
 </resources>

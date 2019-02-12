@@ -160,10 +160,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
             Intent intent = new Intent(MainActivity.this,ImportActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_share) {
-            Toast.makeText(MainActivity.this, "功能还在开发中...", Toast.LENGTH_LONG).show();
-        } else if (id == R.id.nav_send) {
-            Toast.makeText(MainActivity.this, "功能还在开发中...", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.nav_help) {
+            Intent intent = new Intent(MainActivity.this,HelpActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

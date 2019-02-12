@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iliujing.mypassword">
 
-    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
-    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity"
+        <activity android:name=".HelpActivity"></activity>
+        <activity
+            android:name=".StartActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,17 +24,19 @@
         <activity
             android:name=".MainActivity"
             android:label="密码生成"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".PasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PasswordActivity"
             android:label="密码簿"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".AddPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddPasswordActivity"
             android:label="新增记录"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ImportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImportActivity"
             android:label="导入记录"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

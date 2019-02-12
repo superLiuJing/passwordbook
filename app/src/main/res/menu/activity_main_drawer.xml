@@ -4,31 +4,28 @@
     <group>
         <item
             android:id="@+id/pwd_book"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_password_book"
             android:title="密码簿" />
         <item
             android:id="@+id/add_account"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_password_add"
             android:title="新增记录" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_import_export"
             android:title="导出记录" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_import_export"
             android:title="导入记录" />
+
     </group>
 
-    <item android:title="传输">
+    <item android:title="其他">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="面对面传输" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_password_help"
                 android:title="帮助" />
         </menu>
     </item>

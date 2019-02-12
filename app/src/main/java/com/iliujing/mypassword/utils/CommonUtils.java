@@ -29,7 +29,6 @@ import cn.hutool.crypto.SecureUtil;
 
 public class CommonUtils {
     public static List<PasswordItem> getList(Context context) throws CryptoException {
-        List<PasswordItem> list = null;
         SharedPreferences sp = context.getSharedPreferences(DefaultConstants.DB_NAME, Context.MODE_PRIVATE);
         String info = sp.getString(DefaultConstants.DB_ITEM_NAME, null);
         return getListByText(info);
@@ -78,9 +77,6 @@ public class CommonUtils {
     public static boolean isFirstIn(Context context){
         SharedPreferences sp = context.getSharedPreferences(DefaultConstants.DB_NAME, Context.MODE_PRIVATE);
         String info = sp.getString(DefaultConstants.DB_ITEM_NAME, null);
-        if(info == null){
-            return true;
-        }
-        return false;
+        return info == null;
     }
 }
